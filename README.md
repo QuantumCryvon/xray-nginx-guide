@@ -2,7 +2,7 @@
 
 ## 📌 使用说明
 
-- `your.domain.com` → 你的主域名建议开启CDN
+- `your.domain.com` → 你的主域名(建议开启CDN)
   
 - `reality.a.com` → 你的 Reality 伪装域名
   
