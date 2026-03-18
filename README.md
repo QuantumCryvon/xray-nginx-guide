@@ -186,11 +186,9 @@ stream {
         ssl_preread on;
     }
 }
-###########################
 
 #HTTP 及 HTTPS 主体配置
 
-###########################
 http {
     ## 基本设置
     sendfile on;
@@ -221,9 +219,9 @@ http {
     #     application/xml+rss
     #     text/javascript;
 
-    #################################################################
+
     # 1. HTTP 默认站
-    #################################################################
+  
     server {
         listen 80;
         listen [::]:80;
@@ -233,9 +231,8 @@ http {
         return 301 https://$host$request_uri;
     }
 
-    #################################################################
     # 2. 域名 HTTPS 配置：
-    #################################################################
+   
     server {
         listen 10000 ssl http2;
         listen [::]:10000 ssl http2;
@@ -253,9 +250,8 @@ http {
         root /home/admin/webpage;#填入你的网页文件路径
         index index.html;
         
-        #################################################################
-        #  3. xray配置部分                                               #
-        #################################################################
+        #  3. xray配置部分                                               
+        
         #下方有两种写法，第一种只可以使用xhttp packet-up模式
         #第二种可以使用xhttp所有模式
         #如果你决定使用其中一种配置，请删除另一种配置示例
@@ -285,9 +281,8 @@ http {
             proxy_redirect off;
         }
 
-       ###########################
        # 其他所有路径 → 尝试找静态文件，找不到返回 主页面
-       ###########################
+
        location / {
         try_files $uri $uri/ /index.html;
        }
@@ -322,3 +317,11 @@ http {
 
 💬 **发现问题或想讨论？请到：  
 https://github.com/QuantumCryvon/xray-nginx-guide/issues**
+
+## Disclaimer/免责声明
+
+This project is for educational and research purposes only.
+
+Users must comply with all applicable laws and regulations in their respective jurisdictions when using this project. The author is not responsible for any misuse or illegal activities.
+
+Do not use this project for any unlawful purposes.
