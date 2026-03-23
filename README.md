@@ -202,24 +202,6 @@ http {
     access_log /var/log/nginx/access.log;
     error_log /var/log/nginx/error.log warn;
 
-    ## Gzip 设置（可选，根据需求打开）
-    gzip on;
-    # gzip_vary on;
-    # gzip_proxied any;
-    # gzip_comp_level 6;
-    # gzip_buffers 16 8k;
-    # gzip_http_version 1.1;
-    # gzip_types
-    #     text/plain
-    #     text/css
-    #     application/json
-    #     application/javascript
-    #     text/xml
-    #     application/xml
-    #     application/xml+rss
-    #     text/javascript;
-
-
     # 1. HTTP 默认站
   
     server {
@@ -316,7 +298,7 @@ http {
 **“如有错误或改进建议，欢迎指正，本配置已在个人环境中测试可用。”** ✅
 
 💬 **发现问题或想讨论？请到：  
-https://github.com/QuantumCryvon/xray-nginx-guide/issues**
+https://github.com/Luna-Repo/xray-nginx-guide/issues**
 
 
 
