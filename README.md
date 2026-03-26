@@ -21,11 +21,13 @@
   "dns": {
     "queryStrategy": "UseIPv4",
     "servers": [
-      "1.1.1.1",
-      "8.8.8.8",
       {
-        "address": "https+local://1.1.1.1/dns-query",
+        "address": "https://dns.google/dns-query",
         "skipFallback": false
+      },
+      {
+        "address": "https://cloudflare-dns.com/dns-query",
+        "skipFallback": true
       }
     ]
   },
